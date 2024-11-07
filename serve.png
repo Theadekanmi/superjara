@@ -1,0 +1,79 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Recharge & Bill Payment Platform</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <style>
+            body {
+                font-family: 'Arial', sans-serif;
+                background-color: #f7f7f7;
+                margin: 0;
+                padding: 0;
+            }
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
+            .header {
+                text-align: center;
+                margin-bottom: 30px;
+                color: #333;
+            }
+
+            h1 {
+                font-size: 36px;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 18px;
+                color: #666;
+            }
+
+            .auth-buttons {
+                display: flex;
+                justify-content: center;
+            }
+
+            .login-button, .signup-button {
+                background-color: #007bff;
+                color: #fff;
+                padding: 15px 30px;
+                border: none;
+                border-radius: 25px;
+                cursor: pointer;
+                text-decoration: none;
+                margin: 0 20px;
+                font-size: 18px;
+                font-weight: 600;
+                transition: background-color 0.3s ease;
+            }
+
+            .login-button:hover, .signup-button:hover {
+                background-color: #0056b3;
+            }
+
+        </style>
+    </head>
+    <body>
+    <div class="container">
+        <div class="header">
+            <h2>Welcome to superjara.com</h2>
+            <h1>The number one Airtime Recharge, <br>Data Topup & Bill Payment Platform</h1>
+            <p>Our landing page is under little maintenance. log in or sign up to continue.</p>
+        </div>
+        <div class="auth-buttons">
+            <a href="/v/login" class="login-button">Login</a>
+            <a href="/v/register" class="signup-button">Sign Up</a>
+        </div>
+    </div>
+    </body>
+    </html>
