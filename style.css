@@ -197,15 +197,26 @@ nav a{
     justify-content: center;
     align-items: center;
     padding: 3%;
+    overflow: hidden;
 }
 
 .part-item{
-    width: 60%;
+    width: 80%;
     height: 200px;
+    animation: scroll-left 10s linear infinite;
+    
 }
 .part-item img{ 
     width: 12%;
-    height: 100px;
+    height: 50%;
+}
+@keyframes scroll-left{
+    0%{
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 /* media querry */
 @media screen and (max-width:1100px){
@@ -214,23 +225,24 @@ nav a{
     }
     .part-item{
         width: 90%;
-        height: 400px;
+        height: fit-content; 
     }
     .part-item img{
         width: 40%;
     }
+    
 }
 @media screen and (max-width:768px){
+    
     .part-cont{
         flex-direction: column;
     }
     .part-item{
         width: 90%;
-        height: 400px;
+        height: fit-content; 
     }
     .part-item img{
         width: 40%;
-        
     }
 }
 /* services styling  */
@@ -256,8 +268,10 @@ nav a{
     align-items: center;
     padding: 3%;
     gap: 20px;
+    overflow: hidden;
 }
 .serv-item{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     border-radius: 20px;
     width: 35%;
     height: 300px;
@@ -308,8 +322,10 @@ nav a{
     align-items: center;
     padding: 3%;
     gap: 20px;
+    overflow: hidden;
 }
 .serv-itemm{
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     border-radius: 20px;
     width: 35%;
     height: 350px;
@@ -374,6 +390,7 @@ nav a{
     align-items: center;
     padding: 3%;
     gap: 50px;
+    overflow: hidden;
 }
 .how-item{
     width: 50%;
@@ -426,7 +443,7 @@ margin-top: 50px;
     justify-content: center;
     align-items: center;
     padding: 3%;
-    /* gap: 50px; */
+    overflow: hidden;
 }
 .howit-item{
     width: 50%;
@@ -481,6 +498,7 @@ margin-top: 50px;
     padding: 3%;
     gap: 60px;
    margin-top: -80px;
+   overflow: hidden;
 }
 .howiit-item{
     width: 60%;
@@ -538,7 +556,7 @@ margin-top: 50px;
     justify-content: center;
     align-items: center;
     padding: 3%;
-    /* gap: 50px; */
+    overflow: hidden;
 }
 .howitt-item{
     width: 60%;
@@ -587,6 +605,7 @@ margin-top: 50px;
     margin-top: 90px;
 }
 .about-con{
+    overflow: hidden;
     width: 100%;
     padding: 3%;
     display: flex;
@@ -652,6 +671,7 @@ margin-top: 50px;
     margin-top: 70px;
 }
 .vision-con{
+    overflow: hidden;
     width: 100%;
     padding: 3%;
     display: flex;
@@ -727,12 +747,14 @@ margin-top: 50px;
     align-items: center;
     padding: 3%;
     gap: 30px;
+    overflow: hidden;
 }
 .testimonial-item{
     background-color: rgb(255, 255, 255);
     width: 60%;
     height: 250px;
     border-radius: 10px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 .testimonial-item h6{
     margin-top: 30px;
@@ -765,6 +787,7 @@ margin-top: 50px;
 /* pricing styling */
 
 .pricing-con{
+    overflow: hidden;
 width: 100%;
 padding: 3%;
 display: flex;
@@ -837,15 +860,14 @@ gap: 30px;
     height:100vh;
 }
 .faq-con h3{
-    /* margin-top: 50px; */
     font-size: 2rem;
     text-align: center;
     
 }
 .faq-con{
+    overflow: hidden;
     width: 100%;
     padding: 3%;
-
 }
 .faq-item{
     height: 350px;
@@ -853,8 +875,9 @@ gap: 30px;
     background-color:rgb(255, 255, 255);
 }
 .faq-item select{
+    background-color: #99ccff;
     width: 100%;
-    height: 30px;
+    height: 50px;
     margin-top: 10px;
     border: none;
     font-size: 1.2rem;
@@ -877,6 +900,9 @@ gap: 30px;
     .faq-con h3{
         margin-top: 40px;
     }
+    #faq h4{
+       margin-top: 30px;
+    }
 }
 @media screen and (max-width:768px) {
     #faq{
@@ -888,6 +914,9 @@ gap: 30px;
     .faq-con h3{
         margin-top: 40px;
     }
+    #faq h4{
+        margin-top: 30px;
+     }
 }
 /* join styling  */
 
@@ -899,6 +928,7 @@ gap: 30px;
 
 
 .join-con{
+    overflow: hidden;
     width: 100%;
     padding: 3%;
     justify-content: center;
@@ -917,7 +947,11 @@ gap: 30px;
     border-radius: 7px;
     margin-top: 20px;
     transform: translateX(50px);
+    font-size: 1rem;
+    text-align: center;
+   
 }
+
 .btnn {
     width: 75%;
     height: 30px;
@@ -954,10 +988,12 @@ gap: 30px;
 
 
 .foot-con{
+    overflow: hidden;
     width: 100%;
     display: flex;
     padding: 3%;
     gap: 30px;
+    background-color: rgb(51, 51, 51);
 }
 .foot-item{
     width: 55%;
@@ -969,7 +1005,7 @@ gap: 30px;
 .foot-item p{
     line-height: 2;
     font-size: 1rem;
-   color:  rgb(74, 73, 73);
+   color:  rgb(171, 169, 169);
 }
 
 .foot-cont{
@@ -988,7 +1024,7 @@ gap: 30px;
 }
 .foot-itemm a{
     text-decoration: none;
-    color: rgb(74, 73, 73);
+    color:  rgb(171, 169, 169);
     line-height: 2.4;
 }
 #foot hr{
@@ -1000,7 +1036,7 @@ gap: 30px;
     margin-top: 40px;
     text-align: center;
     font-size: 0.80rem;
-    color: rgb(74, 73, 73);
+    color:  rgb(171, 169, 169);
 }
 
 @media screen and (max-width:1100px){
