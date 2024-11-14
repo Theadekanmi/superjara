@@ -25,6 +25,7 @@ header{
    padding: 3%;
    background-color: rgb(240,240,254);
 }
+
 nav{
     transform: translateX(30px);
     display: flex;
@@ -275,11 +276,12 @@ nav a{
     border-radius: 20px;
     width: 35%;
     height: 300px;
-    background-color: rgb(255,255,255)
+    background-color: rgb(240,240,254);
 }
 .serv-item img{
     width: 60px;
-    transform: translate(20px);
+    margin-top: 30px;
+    transform: translateX(30px);
 }
 .serv-item h3{
     color: rgb(62,69,129);
@@ -325,15 +327,16 @@ nav a{
     overflow: hidden;
 }
 .serv-itemm{
-    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    box-shadow: rgba(50, 50, 93, 0.25)0px 1px 1px 0px inset, rgba(0, 0, 0, 0.3)  0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     border-radius: 20px;
     width: 35%;
     height: 350px;
-    background-color: rgb(255,255,255)
+    background-color: rgb(240,240,254);
 }
 .serv-itemm img{
     width: 60px;
-    transform: translate(20px);
+    margin-top: 30px;
+    transform: translateX(30px);
 }
 .serv-itemm h3{
     color: rgb(62,69,129);
@@ -1022,10 +1025,16 @@ gap: 30px;
     margin-top: 70px;
 
 }
+.foot-itemm h6{
+    color: #99ccff;
+}
 .foot-itemm a{
     text-decoration: none;
     color:  rgb(171, 169, 169);
     line-height: 2.4;
+}
+.foot-itemm a:hover{
+    color: blueviolet;
 }
 #foot hr{
     width: 80%;
